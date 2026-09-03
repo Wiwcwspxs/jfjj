@@ -5,12 +5,12 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY 95.py ./
+COPY 77.py 78.py ./
 
-# پوشه دیتا برای Volume
+# نیاز به داخل یک Volume
 RUN mkdir -p /data/clients
 
 ENV DATA_DIR=/data
 ENV PYTHONUNBUFFERED=1
 
-CMD ["python", "95.py"]
+CMD ["python", "77.py"]
