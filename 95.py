@@ -3250,7 +3250,7 @@ class Engine:
             f"📤 ارسال امروز: {fa(self.db.sent_since(int(time.time()) - 86400))}",
             f"✅ کل ارسال: {fa(counts.get('sent', 0))}",
             f"❌ ناموفق: {fa(counts.get('failed', 0))}",
-            f"🔹 عادی: {self.profile_status("standard")}",
+            f"🔹 عادی: {self.profile_status('standard')}",
             f"👑 ویژه: {self.profile_status("vip")}",
         ]
 
