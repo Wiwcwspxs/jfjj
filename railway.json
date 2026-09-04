@@ -4,7 +4,7 @@
     "builder": "dockerfile"
   },
   "deploy": {
-    "startCommand": "python 95.py",
+    "startCommand": "manager_82.py",
     "restartPolicyType": "always"
   }
 }
