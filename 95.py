@@ -3251,7 +3251,7 @@ class Engine:
             f"✅ کل ارسال: {fa(counts.get('sent', 0))}",
             f"❌ ناموفق: {fa(counts.get('failed', 0))}",
             f"🔹 عادی: {self.profile_status('standard')}",
-            f"👑 ویژه: {self.profile_status("vip")}",
+            f"👑 ویژه: {self.profile_status('vip')}",
         ]
 
         if exchange["enabled"]:
